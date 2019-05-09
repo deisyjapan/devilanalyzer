@@ -1,0 +1,110 @@
+﻿<Window x:Name="DevilAnalyzer" x:Class="DevilAnalyzer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DevilAnalyzer"
+        mc:Ignorable="d"
+        Title="DevilAnalyzer" Height="528" Width="1024" Closing="DevilAnalyzer_Closing" Closed="DevilAnalyzer_Closed" >
+    <Grid  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="292*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="spName" Orientation="Horizontal">
+            <Label Content="悪魔名検索"/>
+            <TextBox x:Name="txtDevilName" TextWrapping="Wrap" Text="" Width="156" Margin="0,5,0,5" KeyDown="txtDevilName_KeyDown"/>
+            <Label Content="スキル名検索"/>
+            <TextBox x:Name="txtSkillName" TextWrapping="Wrap" Text="" Width="156" Margin="0,5,0,5" KeyDown="txtSkillName_KeyDown"/>
+            <Label Content="※名前検索は他の検索と組み合わせることはできません。"/>
+        </StackPanel>
+        <Label Content="所持スキル属性による検索" Grid.Row="1"/>
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1014">
+            <CheckBox x:Name="cbSkillAttribute1" Content="物理" Margin="20,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute2" Content="火炎" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute3" Content="氷結" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute4" Content="電撃" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute5" Content="衝撃" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute6" Content="破魔" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute7" Content="呪殺" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute8" Content="万能" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute9" Content="回復" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute10" Content="強化" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute11" Content="弱体化" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute12" Content="バッドステータス" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute13" Content="グッドステータス" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute14" Content="パッシブ" Margin="5,5,0,0"/>
+            <CheckBox x:Name="cbSkillAttribute15" Content="その他" Margin="5,5,0,0"/>
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Left" Height="28" Grid.Row="3" VerticalAlignment="Top" Width="1014">
+            <Label Content="耐性による検索" />
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Left" Height="28" Grid.Row="4" VerticalAlignment="Top" Width="1014" Margin="0">
+            <Label Content="物理" Margin="20,0,0,0"/>
+            <CheckBox x:Name="cbPhysicsWeek" Content="弱" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbPhysics" Content="－" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbPhysicsRegist" Content="耐" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbPhysicsNone" Content="無" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbPhysicsSuction" Content="吸" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbPhysicsReflection" Content="反" Margin="3,6,0,0"/>
+            <Label Content="火炎" Margin="10,0,0,0"/>
+            <CheckBox x:Name="cbFireWeek" Content="弱" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbFire" Content="－" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbFireRegist" Content="耐" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbFireNone" Content="無" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbFireSuction" Content="吸" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbFireReflection" Content="反" Margin="3,6,0,0"/>
+            <Label Content="氷結" Margin="10,0,0,0"/>
+            <CheckBox x:Name="cbIceWeek" Content="弱" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbIce" Content="－" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbIceRegist" Content="耐" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbIceNone" Content="無" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbIceSuction" Content="吸" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbIceReflection" Content="反" Margin="3,6,0,0"/>
+            <Label Content="電撃" Margin="10,0,0,0"/>
+            <CheckBox x:Name="cbShockWeek" Content="弱" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbShock" Content="－" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbShockRegist" Content="耐" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbShockNone" Content="無" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbShockSuction" Content="吸" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbShockReflection" Content="反" Margin="3,6,0,0"/>
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Left" Height="28" Grid.Row="5" VerticalAlignment="Top" Width="1014" Margin="0">
+            <Label Content="衝撃" Margin="20,0,0,0"/>
+            <CheckBox x:Name="cbImpactWeek" Content="弱" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbImpact" Content="－" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbImpactRegist" Content="耐" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbImpactNone" Content="無" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbImpactSuction" Content="吸" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbImpactReflection" Content="反" Margin="3,6,0,0"/>
+            <Label Content="破魔" Margin="10,0,0,0"/>
+            <CheckBox x:Name="cbHamaWeek" Content="弱" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbHama" Content="－" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbHamaRegist" Content="耐" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbHamaNone" Content="無" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbHamaSuction" Content="吸" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbHamaReflection" Content="反" Margin="3,6,0,0"/>
+            <Label Content="呪殺" Margin="10,0,0,0"/>
+            <CheckBox x:Name="cbCurseWeek" Content="弱" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbCurse" Content="－" Margin="0,6,0,0"/>
+            <CheckBox x:Name="cbCurseRegist" Content="耐" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbCurseNone" Content="無" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbCurseSuction" Content="吸" Margin="3,6,0,0"/>
+            <CheckBox x:Name="cbCurseReflection" Content="反" Margin="3,6,0,0"/>
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Left" Height="26" Grid.Row="6" VerticalAlignment="Top" Width="1014">
+            <CheckBox x:Name="cbInherit" Content="継承可能スキルのみ対象" Margin="5,4,0,0"/>
+            <Button x:Name="btnSearch" Content="検索" Click="btnSearch_Click" Width="152" Margin="20,3,0,0"/>
+            <Label Content="結果の悪魔名列を左ダブルクリックで指定悪魔の合体での作成方法を、右ダブルクリックでその悪魔を素材とした合体内容が検索できます。"/>
+        </WrapPanel>
+        <DataGrid x:Name="dgSearch" Grid.Row="7" ItemsSource="{Binding}" AutoGenerateColumns="True" IsReadOnly="True" MouseDoubleClick="dgSearch_MouseDoubleClick" AlternatingRowBackground="#FFACE6F0" RowBackground="White" />
+
+    </Grid>
+
+</Window>

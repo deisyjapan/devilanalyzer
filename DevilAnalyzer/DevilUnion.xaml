@@ -1,0 +1,29 @@
+﻿<Window x:Name="UnionAnswer" x:Class="DevilAnalyzer.DevilUnion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DevilAnalyzer"
+        mc:Ignorable="d"
+        Title="合体で作る場合の組み合わせ" Height="450" Width="500" KeyUp="UnionAnswer_KeyUp" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <WrapPanel HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="500" Grid.RowSpan="1" >
+            <Label Content="指定悪魔" Height="29" Width="60" Background="#FFACE6F0" BorderBrush="#FFACE6F0" BorderThickness="1"/>
+            <Label x:Name="lblDevilName" Content="" Width="240" BorderBrush="#FFACE6F0" BorderThickness="1"/>
+            <Label Content="グレード" Width="50" Background="#FFACE6F0" BorderBrush="#FFACE6F0" BorderThickness="1"/>
+            <Label x:Name="lblGrade" Content="" Width="50" BorderBrush="#FFACE6F0" BorderThickness="1"/>
+            <Label Content="レア度" Width="50" Background="#FFACE6F0" BorderBrush="#FFACE6F0" BorderThickness="1"/>
+            <Label x:Name="lblReality" Content="" Width="50" BorderBrush="#FFACE6F0" BorderThickness="1"/>
+        </WrapPanel>
+        <DataGrid x:Name="dgUnionAnswer"  ItemsSource="{Binding}" AutoGenerateColumns="True" IsReadOnly="True" Grid.Row="2" MouseDoubleClick="dgUnionAnswer_MouseDoubleClick" AlternatingRowBackground="#FFACE6F0" RowBackground="White" Margin="0,0,0,0" />
+        <WrapPanel HorizontalAlignment="Left" Height="30" Grid.Row="1" VerticalAlignment="Top" Width="482">
+            <Label Content="組み合わせ数" HorizontalAlignment="Right" VerticalAlignment="Top" Height="29" Width="79"/>
+            <Label x:Name="lblUnionCount" Content="" Grid.Row="1" Width="140"/>
+        </WrapPanel>
+    </Grid>
+</Window>

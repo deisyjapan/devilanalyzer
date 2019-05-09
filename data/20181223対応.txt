@@ -1,0 +1,4 @@
+死神追加(2体)
+https://d2-megaten-l.sega.jp/news/detail/061501.html
+
+死神ペルセポネーとネルガルのAIが攻撃になっていたのをサポートに修正。

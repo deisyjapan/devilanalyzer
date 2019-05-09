@@ -1,0 +1,62 @@
+-- データ全体を取得するクエリ。耐性は数字から文字をとってきている。
+select 
+	D.No
+	,D.Grade
+	,D.Reality
+	,D.TribeID
+	,D.TribeName
+	,D.Name
+	,D.AI
+	,D.HP
+	,D.Power
+	,D.Magic
+	,D.Physical
+	,D.Speed
+	,D.Luck
+	,R1.Name as PhysicsRegist
+	,R2.Name as IceRegist
+	,R3.Name as ShockRegist
+	,R4.Name as ImpactRegist
+	,R5.Name as HamaRegist
+	,R6.Name as CurseRegist
+	,D.Skill1
+	,D.Skill2
+	,D.Skill3
+	,D.Skill4
+	,D.Skill4Rough
+	,D.Skill4Protection
+	,D.Skill4Unusual
+	,D.Skill4Defense
+	,D.Skill5Rough
+	,D.Skill5Protection
+	,D.Skill5Unusual
+	,D.Skill5Defense
+
+from 
+	DevilTable AS D left join 
+	ResistTable AS R1 on 
+	D.PhysicsRegist = R1.ID left join 
+	ResistTable AS R2 on 
+	D.IceRegist = R2.ID left join 
+	ResistTable AS R3 on 
+	D.ShockRegist = R3.ID left join 
+	ResistTable AS R4 on 
+	D.ImpactRegist = R4.ID left join 
+	ResistTable AS R5 on 
+	D.HamaRegist = R5.ID left join 
+	ResistTable AS R6 on 
+	D.CurseRegist = R6.ID
+-- 以下の「アギダイン」を変更することで、スキルを検索可能。
+where 
+	D.Skill1 = 'アギダイン' or 
+	D.Skill2 = 'アギダイン' or 
+	D.Skill3 = 'アギダイン' or 
+	D.Skill4 = 'アギダイン' or 
+	D.Skill4Rough = 'アギダイン' or
+	D.Skill4Protection = 'アギダイン' or
+	D.Skill4Unusual = 'アギダイン' or
+	D.Skill4Defense = 'アギダイン' or
+	D.Skill5Rough = 'アギダイン' or
+	D.Skill5Protection = 'アギダイン' or
+	D.Skill5Unusual = 'アギダイン' or
+	D.Skill5Defense = 'アギダイン'	
