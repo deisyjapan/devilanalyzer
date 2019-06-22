@@ -273,11 +273,13 @@ namespace DevilAnalyzer.DA
         {
             // 種族名一致かつ全書Noが1000以下のものを対象とする。
             // 全書Noが1000を超えるものは合体では作れない悪魔なので対象に含めない。
+            // No201 ミシャグジさま
+            // No213 パールヴァティ
             string query = string.Format("select No ,Grade ,Reality,TribeName,Name " +
                 "from DevilTable " +
                 //"where TribeName ='{0}' and No <= 1000 order by Grade", DevilTribe);
                 "where TribeName ='{0}' and " +
-                "(No <= 1000 and No <> 201) "+
+                "(No <= 1000 and No <> 201 and No <> 213) "+
                 " order by Grade", DevilTribe);
             return query;
         }
