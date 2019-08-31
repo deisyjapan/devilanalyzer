@@ -9,7 +9,7 @@
 
 ２．配布元
 　　配布ページは以下のページです。使い方の説明も記述されています。
-　　　https://deisy.jp/social-network-game/d2-megaten/201805/devilanalyzer/
+　　　https://deisy.jp/devilanalyzer/
 　　なお上記ページが見つからない場合、以下がトップページですので、カテゴリ「D2メガテン」から
 　　探してみてください。
 　    https://deisy.jp/
@@ -22,7 +22,7 @@
 ４．指摘先
 　　以下のいずれかの形でご指摘をお願いします。
 　　・配布元ページへのコメント
-　　　https://deisy.jp/social-network-game/d2-megaten/201805/devilanalyzer/
+　　　https://deisy.jp/devilanalyzer/
 　　・作者のツイッターアカウント
 　　  https://twitter.com/deisy_twi
 　　　DMでもリプライでも構いません。

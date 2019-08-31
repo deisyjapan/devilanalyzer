@@ -279,7 +279,7 @@ namespace DevilAnalyzer.DA
                 "from DevilTable " +
                 //"where TribeName ='{0}' and No <= 1000 order by Grade", DevilTribe);
                 "where TribeName ='{0}' and " +
-                "(No <= 1000 and No <> 201 and No <> 213) "+
+                "(No <= 1000 and No <> 201 and No <> 213 and No <> 221 and No <> 222) " +
                 " order by Grade", DevilTribe);
             return query;
         }
