@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\git\gitlab\d2megaten\devilanalyzer\DevilAnalyzer\obj\Debug\
+D:\git\github\devilanalyzer\DevilAnalyzer\obj\Debug\
 DevilAnalyzer
 none
 false
-CODE_ANALYSIS;DEBUG;TRACE
-E:\git\gitlab\d2megaten\devilanalyzer\DevilAnalyzer\App.xaml
+DEBUG;TRACE
+D:\git\github\devilanalyzer\DevilAnalyzer\App.xaml
 31882911045
 
 10-610979783
-19-144484447
+191906642771
 DevilUnion.xaml;MainWindow.xaml;SkillDetail.xaml;
 
 False
