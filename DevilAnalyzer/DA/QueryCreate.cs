@@ -278,17 +278,20 @@ namespace DevilAnalyzer.DA
             // No213 パールヴァティ
             // No222 キュベレ
             // No224 カルティケーヤ
+            // No229 ジャックリパー
             // No230 バアル
             // No231 ウリエル
             // No232 ラファエル
             // No233 ガブリエル
-            // No329 セラフ
+            // No239 セラフ
+            // No244 フロストエース
             string query = string.Format("select No ,Grade ,Reality,TribeName,Name " +
                 "from DevilTable " +
                 //"where TribeName ='{0}' and No <= 1000 order by Grade", DevilTribe);
                 "where TribeName ='{0}' and " +
                 //             "(No <= 1000 and No <> 201 and No <> 213 and No <> 221 and No <> 222) " +
-                "(No <= 1000 and No <> 201 and No <> 213 and No <> 221 and No <> 222 and No <> 224 and No <> 230 and No <> 231 and No <> 232 and No <> 233 and No <> 239) " +
+                "(No <= 1000 and No <> 201 and No <> 213 and No <> 221 and No <> 222 and No <> 224 and No <> 229 " +
+                " and No <> 230 and No <> 231 and No <> 232 and No <> 233 and No <> 239 and No <> 244) " +
                 " order by Grade", DevilTribe);
             return query;
         }
