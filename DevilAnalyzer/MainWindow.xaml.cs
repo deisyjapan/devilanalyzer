@@ -358,6 +358,7 @@ namespace DevilAnalyzer
                                     SkillDetailWindow = new SkillDetail(strCellValue, false);
                                     if (SkillDetailWindow.bTargetSkill == true)
                                     {
+                                        SkillDetailWindow.Owner = GetWindow(this);
                                         SkillDetailWindow.ShowDialog();
                                     }
                                     break;
@@ -371,6 +372,7 @@ namespace DevilAnalyzer
                                     SkillDetailWindow = new SkillDetail(strCellValue, true);
                                     if (SkillDetailWindow.bTargetSkill == true)
                                     {
+                                        SkillDetailWindow.Owner = GetWindow(this);
                                         SkillDetailWindow.ShowDialog();
                                     }
                                     break;
