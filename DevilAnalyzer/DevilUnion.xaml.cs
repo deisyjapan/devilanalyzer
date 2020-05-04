@@ -107,6 +107,18 @@ namespace DevilAnalyzer
                 query = QueryCreate.CreateGetDevilTableUnionInfoUserSelect(DevileTribe);
                 dtAfterInfo = da.readdata(query);
 
+                // 選択された悪魔が含まれていない(合体不可な悪魔)場合は処理を終了する。
+                for (i = 0; i < dtAfterInfo.Rows.Count; i++)
+                {
+                    if (dtAfterInfo.Rows[i]["Name"].ToString() == DevilName)
+                    {
+                        break;
+                    }
+                }
+                if (i == dtAfterInfo.Rows.Count)
+                {
+                    return dtUnionList;
+                }
 
                 /*
                  * 計算した結果のグレード値が、対象種族の悪魔のどの悪魔になるのか調べる。
