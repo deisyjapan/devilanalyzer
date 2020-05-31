@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DevilAnalyzer"
         mc:Ignorable="d"
-        Title="スキルデータ" Height="226.802" Width="511.93" ResizeMode="NoResize" KeyUp="Window_KeyUp"
+        Title="スキルデータ" Height="360" Width="511.93" ResizeMode="NoResize" KeyUp="Window_KeyUp"
         WindowStartupLocation="CenterOwner"> 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -17,11 +17,11 @@
             <ColumnDefinition Width="127*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         <Label Content="スキル名称" Background="#FFACE6F0" BorderBrush="#FFACE6F0" BorderThickness="1"/>
         <Label x:Name="lblSkillName" Content="" Grid.Column="1"  BorderBrush="#FFACE6F0" BorderThickness="1"/>
