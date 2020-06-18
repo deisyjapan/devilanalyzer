@@ -96,7 +96,6 @@ D:\git\devilanalyzer\DevilAnalyzer\bin\Debug\EntityFramework.xml
 D:\git\devilanalyzer\DevilAnalyzer\bin\Debug\EntityFramework.SqlServer.xml
 D:\git\devilanalyzer\DevilAnalyzer\bin\Debug\System.Data.SQLite.xml
 D:\git\devilanalyzer\DevilAnalyzer\bin\Debug\System.Data.SQLite.dll.config
-D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\DevilAnalyzer.csprojAssemblyReference.cache
 D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\DevilUnion.g.cs
 D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\MainWindow.g.cs
 D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\SkillDetail.g.cs
