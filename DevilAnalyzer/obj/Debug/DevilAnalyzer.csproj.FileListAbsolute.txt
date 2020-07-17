@@ -112,3 +112,4 @@ D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\DevilAnalyzer.csproj.CoreCompileInp
 D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\DevilAnalyzer.csproj.CopyComplete
 D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\DevilAnalyzer.exe
 D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\DevilAnalyzer.pdb
+D:\git\devilanalyzer\DevilAnalyzer\obj\Debug\DevilAnalyzer.csprojAssemblyReference.cache
